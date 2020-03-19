@@ -53,7 +53,175 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+/*html, body {
     height: 100%;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Acme|Anton&display=swap');
+		/*Variable*/
+@H1-font: 'Anton', sans-serif;
+@H3-font: 'Acme', sans-serif;
+@background-color:#331a00;
+@font-color:#d07f6b;
+		/*Mixen*/
+.display(){
+	display: flex;
+	flex-direction: column;
+}
+.color(){
+	color:@font-color;
+	background-color:@background-color;
+}
+.margins(){
+	margin-left: 8%;
+	margin-right: 8%;
 }
 
+		/*Body*/
+body{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*margin-left: 15%;
+	margin-right: 15%;*/
+	color: white;
+	}
+
+	
+h3{
+	margin-bottom: 2%;
+	padding: 1%;
+}
+h4{
+	color: @font-color;
+	font-size: 1.2rem;
+	padding-bottom: 1%;
+}
+
+h5{
+	color: @font-color;
+	font-size: 1.2rem;
+	padding-bottom: 1%;
+}
+ul{
+	list-style-type: circle;
+	line-height: 20px;
+}
+
+.left-side{
+	width: 25%;
+	background-color:@background-color ;
+		.contain-left{
+			.margins();
+				h1{
+					color: @font-color;
+					font-size: 2.5rem;
+					font-weight: bolder;
+					
+					
+						
+				}/*closes h1*/
+			
+		}/*closes contain-left*/
+
+}/*closes left-side*/
+
+header{
+max-width: 100%;
+}
+h2{
+	font-size: 2rem;
+	padding-bottom: 20%;
+	
+	
+}
+figure{
+	width: 100%;
+	padding-bottom: 5%;
+	
+	
+		img{
+		width: 100%;
+		height: 50vh;
+		
+		
+	
+	}/*closes img*/
+}/*closes figure*/
+
+.contain-left{
+	.display();
+	.box1{
+		padding-bottom: 10%;
+	
+	.title{
+		.color();
+		font-size: 1.5rem;
+		padding-left: 2%;
+		}
+	}/*closes title*/
+}/*closes contain-left*/
+
+/* Right Section*/
+.right-side{
+	width: 43%;
+	color: black;
+	margin-left: 3%;
+	padding-right: 8%;	
+	.display();
+		.title{
+			.color();
+
+			
+			
+		}
+}
+.container-right{
+	padding-top: 15%;
+
+	.title{
+		font-size: 1.5rem;
+		padding-left: 2%;
+			
+	}	
+}
+.box2{
+	padding-bottom: 10%;
+}
+
+.job1{
+	padding-bottom: 2%;
+}
+
+.ref-info p{
+
+	padding-bottom: 2%;
+}
+
+.academic h5{
+padding-bottom: 2%;
+}
+
+
+@media(max-width:500px){
+	body{
+	
+	flex-wrap: nowrap;
+	flex-direction: column;
+	}
+  }
+  @media(max-width: 500px) {
+	.left-side{
+		width: 100%;
+	}
+  }
+  @media(max-width: 500px) {
+	.right-side{
+		width: 100%;
+	}
+  }
+  @media(max-width: 500px) {
+	.figure{
+		width: 100%;
+		height: 30vh;
+	}
+  }

@@ -1,1 +1,280 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/*html, body {
+    height: 100%;
+}*/
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_XxrBaw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+/*Variable*/
+/*Mixen*/
+/*Body*/
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin-left: 15%;
+	margin-right: 15%;*/
+  color: white;
+}
+h3 {
+  margin-bottom: 2%;
+  padding: 1%;
+}
+h4 {
+  color: #d07f6b;
+  font-size: 1.2rem;
+  padding-bottom: 1%;
+}
+h5 {
+  color: #d07f6b;
+  font-size: 1.2rem;
+  padding-bottom: 1%;
+}
+ul {
+  list-style-type: circle;
+  line-height: 20px;
+}
+.left-side {
+  width: 25%;
+  background-color: #331a00;
+  /*closes contain-left*/
+}
+.left-side .contain-left {
+  margin-left: 8%;
+  margin-right: 8%;
+  /*closes h1*/
+}
+.left-side .contain-left h1 {
+  color: #d07f6b;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+/*closes left-side*/
+header {
+  max-width: 100%;
+}
+h2 {
+  font-size: 2rem;
+  padding-bottom: 20%;
+}
+figure {
+  width: 100%;
+  padding-bottom: 5%;
+  /*closes img*/
+}
+figure img {
+  width: 100%;
+  height: 50vh;
+}
+/*closes figure*/
+.contain-left {
+  display: flex;
+  flex-direction: column;
+  /*closes title*/
+}
+.contain-left .box1 {
+  padding-bottom: 10%;
+}
+.contain-left .box1 .title {
+  color: #d07f6b;
+  background-color: #331a00;
+  font-size: 1.5rem;
+  padding-left: 2%;
+}
+/*closes contain-left*/
+/* Right Section*/
+.right-side {
+  width: 43%;
+  color: black;
+  margin-left: 3%;
+  padding-right: 8%;
+  display: flex;
+  flex-direction: column;
+}
+.right-side .title {
+  color: #d07f6b;
+  background-color: #331a00;
+}
+.container-right {
+  padding-top: 15%;
+}
+.container-right .title {
+  font-size: 1.5rem;
+  padding-left: 2%;
+}
+.box2 {
+  padding-bottom: 10%;
+}
+.job1 {
+  padding-bottom: 2%;
+}
+.ref-info p {
+  padding-bottom: 2%;
+}
+.academic h5 {
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  body {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .left-side {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .right-side {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .figure {
+    width: 100%;
+    height: 30vh;
+  }
+}
